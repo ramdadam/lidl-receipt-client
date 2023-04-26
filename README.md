@@ -14,7 +14,7 @@ Install dependencies by running:
 ### Access/Refresh Token
 In order to fetch your receipts you will need to generate an access token for your profile. This is done with the `get-refresh-token.js` script. It will output an access token as well as a refresh token. The refresh token will allow the app to refresh the access token, which means less work for you. The [script](https://gist.github.com/basst85/ef5dae992f75ca4773a75f0249583bc1) was written by [basst85](https://gist.github.com/basst85). 
 
-
+NOTE: The script did not work for me when 2-factor authentication was not used and required some modification.
 You can run the script with the following command:
 ```node get-refresh-token.js```
 

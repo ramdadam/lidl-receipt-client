@@ -130,7 +130,7 @@ def get_receipts(
         max_page = int(first_page.totalCount / first_page.size) + 1
         records_size = len(first_page.records)
         _LOG.info("fetching receipts")
-        _LOG.info(f"page 1/{max_page}: {first_page.size}/{first_page.totalCount}")
+        _LOG.info(f"page 1/{max_page} - total: {first_page.totalCount}")
         for page in range(2, max_page + 1):
             requested_receipts, auth_context = request_paginated_tickets(
                 page, auth_context
